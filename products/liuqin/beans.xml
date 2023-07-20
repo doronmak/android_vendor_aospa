@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <include name="../platforms/taro.xml" />
+
+  <project path="device/xiaomi/liuqin" name="33bca/android_device_xiaomi_liuqin" remote="github-ssh" revision="vauxite"/>
+  <project path="device/xiaomi/liuqin-kernel" name="33bca/android_device_xiaomi_liuqin-kernel" remote="github-ssh" revision="vauxite"/>
+  <project path="device/xiaomi/sepolicy" name="AOSPA/android_device_xiaomi_sepolicy" remote="github-ssh" revision="vauxite"/>
+  <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="vauxite"/>
+  <project path="vendor/xiaomi/liuqin" name="33bca/android_vendor_xiaomi_liuqin" remote="github-ssh" revision="vauxite"/>
+</manifest>
