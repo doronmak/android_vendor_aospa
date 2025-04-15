@@ -55,7 +55,7 @@
     <linkfile dest="kernel_platform/build/abi" src="abi" />
     <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis" />
   </project>
-  <project name="AOSPA/android_kernel_qcom_sm8550" path="kernel_platform/common" remote="aospa" revision="vauxite">
+  <project name="xiaomi-8550/android_kernel_qcom_sm8550" path="kernel_platform/common" remote="aospa" revision="vauxite">
     <linkfile dest=".source_date_epoch_dir" src="." />
   </project>
   <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="4d5a00ba459e6743f5fcd487d81c7e8e4ebabae5" upstream="refs/heads/kernel.lnx.5.15.r1-rel" />
