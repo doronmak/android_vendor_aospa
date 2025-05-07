@@ -1,3 +1,6 @@
+# Lineage Health
+persist.lineage.health.                 u:object_r:lineage_health_prop:s0
+
 # PIHooks
 persist.sys.pihooks.enabled_features    u:object_r:pih_features_prop:s0
 persist.sys.pihooks.security_patch      u:object_r:pih_build_prop:s0
