@@ -11,5 +11,6 @@
   <project path="device/xiaomi/xuanyuan-kernel" name="xiaomi-8750/android_device_xiaomi_xuanyuan-kernel" remote="github-ssh" revision="vauxite" />
   <project path="device/xiaomi/sepolicy" name="xiaomi-8750/android_device_xiaomi_sepolicy" remote="aospa" revision="vauxite" />
   <project path="hardware/xiaomi" name="xiaomi-8750/android_hardware_xiaomi" remote="aospa" revision="vauxite" />
+  <project path="vendor/xiaomi/camera" name="xiaomi-8750/proprietary_vendor_xiaomi_camera" remote="github-ssh" revision="vauxite-xuanyuan" />
   <project path="vendor/xiaomi/xuanyuan" name="xiaomi-8750/proprietary_vendor_xiaomi_xuanyuan" remote="github-ssh" revision="vauxite" />
 </manifest>
