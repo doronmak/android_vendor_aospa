@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+     SPDX-FileCopyrightText: 2024-2025 Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest>
+  <include name="../platforms/kalama-kernel.xml" />
+  <include name="../platforms/kalama.xml" />
+
+    <!-- Kernel source -->
+    <project name="doronmak/android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="github" revision="lineage-22.2" />
+
+    <!-- requierd -->
+    <project name="LineageOS/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="lineage-22.2" />
+    <project name="halogenOS/android_hardware_qcom-caf_msm8996_media" path="hardware/qcom-caf/msm8996/media" remote="github" revision="XOS-15.2" />
+    <project name="halogenOS/android_hardware_qcom-caf_msm8996_display" path="hardware/qcom-caf/msm8996/display" remote="github" revision="XOS-15.2" />
+    <project name="halogenOS/android_hardware_qcom-caf_msm8996_audio" path="hardware/qcom-caf/msm8996/audio" remote="github" revision="XOS-15.2" />
+  <!-- <project path="kernel_platform/msm-kernel" name="xiaomi-msm8953-devs/android_kernel_xiaomi_msm8953" remote="aospa" revision="vauxite" /> -->
+  <!-- <project name="doronmak/android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="github" revision="lineage-22.2" /> -->
+  
+  <!-- <project name="halogenOS/android_hardware_qcom-caf_msm8996_audio" path="hardware/qcom-caf/msm8996/audio" remote="github" revision="XOS-15.2" /> -->
+  <!-- <project path="vendor/qcom/opensource/audio-kernel" name="xiaomi-8550/vendor_qcom_opensource_audio-kernel-ar" remote="aospa" revision="xiaomi-8550">
+    <linkfile src="audio_kernel_vendor_board.mk" dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk" />
+    <linkfile src="audio_kernel_product_board.mk" dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk" />
+  </project> -->
+  <!-- <project path="vendor/qcom/opensource/camera-kernel" name="xiaomi-8550/vendor_qcom_opensource_camera-kernel" remote="aospa" revision="xiaomi-8550">
+    <linkfile src="board.mk" dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" />
+    <linkfile src="product.mk" dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/display-drivers" name="xiaomi-8550/vendor_qcom_opensource_display-drivers" remote="aospa" revision="xiaomi-8550">
+    <linkfile src="display_driver_product.mk" dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" />
+    <linkfile src="display_driver_board.mk" dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/touch-drivers" name="xiaomi-8550/vendor_qcom_opensource_touch-drivers" remote="aospa" revision="xiaomi-8550">
+    <linkfile src="touch_driver_board.mk" dest="vendor/qcom/defs/board-defs/vendor/touch_driver_board.mk" />
+    <linkfile src="touch_driver_product.mk" dest="vendor/qcom/defs/product-defs/vendor/touch_driver_product.mk" />
+  </project> -->
+  <project path="vendor/nxp/opensource/driver" name="platform/vendor/nxp/opensource/driver" remote="clo-la" revision="0fa6e331b8d5b0360eec46ee014a46543bb17c1a">
+    <linkfile src="nfc_kernel_dlkm_vendor_board.mk" dest="vendor/qcom/defs/board-defs/vendor/nfc_kernel_dlkm_vendor_board.mk" />
+    <linkfile src="nfc_kernel_dlkm_vendor_product.mk" dest="vendor/qcom/defs/product-defs/vendor/nfc_kernel_dlkm_vendor_product.mk" />
+  </project>
+
+  <project path="vendor/qcom/proprietary/devicetree" name="xiaomi-8550/vendor_qcom_proprietary_devicetree" remote="aospa" revision="xiaomi-8550" />
+  <project path="vendor/qcom/proprietary/audio-devicetree" name="xiaomi-8550/vendor_qcom_proprietary_audio-devicetree" remote="aospa" revision="xiaomi-8550" />
+  <project path="vendor/qcom/proprietary/camera-devicetree" name="xiaomi-8550/vendor_qcom_proprietary_camera-devicetree" remote="aospa" revision="xiaomi-8550" />
+  <project path="vendor/qcom/proprietary/display-devicetree" name="xiaomi-8550/vendor_qcom_proprietary_display-devicetree" remote="aospa" revision="xiaomi-8550" />
+
+  <!-- Device Dependencies -->
+  <project path="device/xiaomi/sepolicy" name="AOSPA/android_device_xiaomi_sepolicy" remote="aospa" revision="vauxite" />
+  <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="vauxite" />
+  <project path="vendor/xiaomi/camera" name="proprietary_vendor_xiaomi_camera" remote="blobs-gitlab" revision="vauxite-sm8550" clone-depth="1" />
+  <project name="doronmak/android_device_xiaomi_tissot" path="device/xiaomi/tissot" remote="github" revision="lineage-22.2" />
+  <!-- <project name="doronmak/android_vendor_xiaomi_tissot" path="vendor/xiaomi/tissot" remote="github" revision="lineage-22.2" /> -->
+  <project name="doronmak/proprietary_vendor_xiaomi_msm8953-common" path="vendor/xiaomi/msm8953-common" remote="github" revision="lineage-22.2" />
+  <project name="plrine/proprietary_vendor_xiaomi_tissot" path="vendor/xiaomi/tissot" remote="github" revision="lineage-22.1" />
+
+</manifest>
